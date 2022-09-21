@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Date from '../components/date';
+import Weather from "../components/weather";
 
 import { getSortedPostsData } from '../lib/posts';
 
@@ -23,6 +24,7 @@ export default function Home({ allPostsData }) {
         </Head>
         <section className={utilStyles.headingMd}>
           <p>I'm Kenn and I'm experimenting with NextJS.</p>
+            <Weather></Weather>
         </section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <h2 className={utilStyles.headingLg}>Blog</h2>
